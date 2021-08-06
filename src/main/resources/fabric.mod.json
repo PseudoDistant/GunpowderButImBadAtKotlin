@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "gunpowder-template",
+  "version": "${version}",
+  "name": "Gunpowder Template",
+  "description": "Gunpowder Template Module",
+  "license": "MIT",
+  "icon": "assets/gunpowder/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "gunpowder:modules": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.gunpowder.GunpowderTemplateModule"
+      }
+    ]
+  },
+  "mixins": [
+    "mixins.template.gunpowder.json"
+  ],
+  "depends": {
+    "gunpowder-base": ">=${gunpowder}",
+    "fabricloader": ">=0.8.9",
+    "fabric": "*"
+  }
+}
